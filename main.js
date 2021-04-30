@@ -20,3 +20,10 @@ function arrow(){
     document.getElementById("arrow3").style.color = "white";
     document.getElementById("ps").style.color = "red";
 }
+
+const toggleButton = document.getElementsByClassName('toggle')[0]
+const navbarLinks = document.getElementsByClassName('links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
